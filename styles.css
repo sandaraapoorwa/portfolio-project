@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --primary-color: #a855f7;
-  --primary-color-dark: #9333ea;
-  --secondary-color: #4571ea;
+  --primary-color: #0b7ba3;
+  --primary-color-dark: #093f62;
+  --secondary-color: #1f346e;
   --text-dark: #1f2937;
   --text-light: #6b7280;
-  --extra-light: #faf5ff;
-  --max-width: 1200px;
+  --max-width: 1300px;
 }
 
 * {
@@ -67,7 +66,7 @@ ul li a:hover {
 }
 
 .section {
-  background-color: var(--extra-light);
+    background-color: rgb(217, 255, 215);
 }
 
 .section__container {
@@ -166,7 +165,8 @@ ul li a:hover {
   }
   
   .about-section {
-    max-width: var(--max-width);
+    background-color: bisque;
+    max-width: 1500px;
     margin: auto;
     display: flex;
     padding-top: 5rem;
@@ -194,6 +194,8 @@ ul li a:hover {
 .skill-section{
     padding-top: 5rem;
     padding-bottom: 10rem;
+    background-color: rgb(162, 242, 226);
+    max-width: 1500px;
 }
 
 .skill-section h2 {
