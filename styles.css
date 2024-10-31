@@ -259,6 +259,73 @@ ul li a:hover {
     font-weight: 600;
     color: #000000;
 }
+
+/* Projects Section */
+.projects {
+  display: flexbox;
+  background-image:linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f4f8;
+  padding: 5rem 2rem;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.project-section {
+  display: grid;
+  gap: 2.5rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-section h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Project Item Styles */
+.project-section .Eco-Echoes,
+.project-section .Plane,
+.project-section .student,
+.project-section .modde {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  display: grid;
+  transition: transform 0.2s;
+}
+
+.project-section .Eco-Echoes:hover,
+.project-section .Plane:hover,
+.project-section .student:hover,
+.project-section .modde:hover {
+  transform: translateY(-5px);
+}
+
+.project-section h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Project Images */
+.project-section .img {
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.project-section img {
+  width: min(40rem, 90%);
+  height: auto;
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+  max-height:
+}
 footer {
     background-color: #000000;
     color: #f2eeee;
