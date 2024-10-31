@@ -158,18 +158,15 @@ ul li a:hover {
     aspect-ratio: 1 / 1;
     height: fit-content;
   }
-
 #about{
   scroll-behavior: smooth;
 }
-
 .about-image img {
     width: min(50rem, 40%);
     height: auto;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
   }
-  
   .about-section {
     background-color: bisque;
     max-width: 1500px;
@@ -181,7 +178,6 @@ ul li a:hover {
     gap: 1.5rem;
     text-align: center;
   }
-  
 .about-content {
     color: #1f2937;
     font-family: "Poppins", sans-serif;
@@ -190,21 +186,18 @@ ul li a:hover {
     padding-bottom: 5rem;
     line-height: 1.75rem;
     max-width: 800px;
-
   }
 .about-content p {
     color: #6b7280;
     margin-bottom: 1.5rem;
     padding-top: 3rem;
   }
-
 .skill-section{
     padding-top: 5rem;
     padding-bottom: 10rem;
     background-color: rgb(162, 242, 226);
     max-width: 1500px;
 }
-
 .skill-section h2 {
     font-size: 4rem;
     text-align: center;
@@ -244,7 +237,6 @@ ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
-
 .skill:hover {
     transform: translateY(-10px);
 }
@@ -253,7 +245,6 @@ ul li a:hover {
     color: #000000;
     margin-bottom: 10px;
 }
-
 .skill {
     font-size: 1rem;
     font-weight: 600;
@@ -311,20 +302,89 @@ ul li a:hover {
   color: #2c3e50;
   margin-bottom: 1.5rem;
 }
-
 /* Project Images */
 .project-section .img {
   display: grid;
   place-items: center;
   margin-bottom: 1.5rem;
 }
-
 .project-section img {
   width: min(40rem, 90%);
   height: auto;
   border-radius: 12px;
   aspect-ratio: 16 / 9;
   max-height:
+}
+#contact {
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #efeeee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+.contact__content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.contact__content p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+/* Form Styling */
+.contact__form {
+  margin-bottom: 1.5rem;
+}
+.contact__form label {
+  display: block;
+  font-weight: bold;
+  margin: 0.5rem 0 0.25rem;
+  text-align: left;
+}
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
+}
+.contact__form input:focus,
+.contact__form textarea:focus {
+  border-color: #5a67d8;
+  outline: none;
+}
+/* Button Styling */
+.contact__form button {
+  background-color: #5a67d8;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact__form button:hover {
+  background-color: #4c51bf;
+}
+.contact__social {
+  margin-top: 1.5rem;
+}
+.contact__social a {
+  color: #5a67d8;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+.contact__social a:hover {
+  color: #4c51bf;
 }
 footer {
     background-color: #000000;
@@ -342,13 +402,11 @@ footer i{
   padding-top: 0.5rem;
   padding: 1rem;
   color: white;
-  
 }
 @media (width < 750px) {
   nav .checkbox {
     display: block;
   }
-
   ul {
     position: absolute;
     width: 100%;
@@ -368,32 +426,26 @@ footer i{
   ul li a {
     font-size: 1.25rem;
   }
-
   .section__container {
     padding: 10rem 1rem 5rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
   }
-
   .image {
     grid-area: 1/1/2/2;
   }
-
   .action__btns {
     margin: auto;
   }
   .about-section {
     padding: 1rem;
   }
-
   .about .title {
     font-size: 1.75rem;
   }
-
   .about .subtitle {
     font-size: 1.1rem;
   }
-
   .about-content {
     font-size: 0.95rem;
     line-height: 1.5rem;
