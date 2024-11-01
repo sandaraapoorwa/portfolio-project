@@ -20,12 +20,9 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  
+  font-family: "Poppins", sans-serif; 
 }
-
 .nav__content {
-  max-width: var(--max-width);
   margin: auto;
   padding: 1.5rem 1rem;
   display: flex;
@@ -309,6 +306,7 @@ ul li a:hover {
   place-items: center;
   margin-bottom: 1.5rem;
 }
+
 .project-section img {
   width: min(40rem, 90%);
   height: auto;
@@ -318,7 +316,9 @@ ul li a:hover {
 }
 
 .contact {
-  background-image: ;
+  background-color: #FFDEE9;
+background-image: linear-gradient(146deg, #FFDEE9 0%, #B5FFFC 50%, #ffffff 100%);
+
   max-width: 600px;
   width: 100%;
   margin: 2rem auto;
@@ -364,7 +364,6 @@ ul li a:hover {
   border-color: #5a67d8;
   outline: none;
 }
-/* Button Styling */
 .contact__form button {
   background-color: #5a67d8;
   color: #fff;
