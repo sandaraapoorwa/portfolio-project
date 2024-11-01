@@ -22,7 +22,7 @@ a {
 body {
   font-family: "Poppins", sans-serif; 
 }
-.nav__content {
+.nav-content {
   margin: auto;
   padding: 1.5rem 1rem;
   display: flex;
@@ -114,15 +114,15 @@ ul li a:hover {
 }
 .action__btns i {
     font-size: 1.8rem;
-    color: #000000; /* Default icon color */
+    color: #000000;
     transition: color 0.3s, transform 0.2s;
     cursor: pointer;
     padding-top: 0.7rem;
 }
 
 .action__btns i:hover {
-    color: #cac8c8; /* Highlight color on hover */
-    transform: scale(1.1); /* Slight zoom on hover */
+    color: #cac8c8; 
+    transform: scale(1.1);
 }
 
 .action__btns button {
@@ -208,7 +208,6 @@ ul li a:hover {
     max-width: 750px; 
     padding: 0 1.5rem; 
     margin-bottom: 2rem;
-    
 }
 .skills {
     display: grid;
@@ -247,7 +246,7 @@ ul li a:hover {
 }
 
 /* Projects Section */
-.projects {
+.projects{
   display: flexbox;
   background-image:linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );;
   flex-direction: column;
@@ -257,7 +256,6 @@ ul li a:hover {
   max-width: 1500px;
   margin: auto;
 }
-
 .project-section {
   display: grid;
   gap: 2.5rem;
@@ -265,14 +263,11 @@ ul li a:hover {
   max-width: 1200px;
   margin: auto;
 }
-
 .project-section h2 {
   font-size: 3rem;
   color: #333;
   margin-bottom: 2rem;
 }
-
-/* Project Item Styles */
 .project-section .Eco-Echoes,
 .project-section .Plane,
 .project-section .student,
@@ -284,14 +279,12 @@ ul li a:hover {
   display: grid;
   transition: transform 0.2s;
 }
-
 .project-section .Eco-Echoes:hover,
 .project-section .Plane:hover,
 .project-section .student:hover,
 .project-section .modde:hover {
   transform: translateY(-5px);
 }
-
 .project-section h3 {
   font-size: 2rem;
   color: #2c3e50;
@@ -311,9 +304,12 @@ ul li a:hover {
   aspect-ratio: 16 / 9;
   max-height:
 }
+.contact-head{
+  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
 
+}
 .contact {
-  background-image: linear-gradient(146deg, #FFDEE9 0%, #B5FFFC 50%, #ffffff 100%);
+  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
   max-width: 600px;
   width: 100%;
   margin: 2rem auto;
@@ -323,43 +319,42 @@ ul li a:hover {
   text-align: center;
   margin-bottom: 5rem;
 }
-.contact__content h2 {
+.contact-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #ffffff;
 }
-.contact__content p {
+.contact-content p {
   font-size: 1rem;
   margin-bottom: 2rem;
   color: #666;
 }
-/* Form Styling */
-.contact__form {
+.contact-form {
   margin-bottom: 1.5rem;
 }
-.contact__form label {
+.contact-form label {
   display: block;
   font-weight: bold;
   margin: 0.5rem 0 0.25rem;
   text-align: left;
 }
-.contact__form input,
-.contact__form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0 1rem;
   border-radius: 4px;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   font-size: 1rem;
   color: #333;
 }
-.contact__form input:focus,
-.contact__form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   border-color: #5a67d8;
   outline: none;
 }
-.contact__form button {
-  background-color: #5a67d8;
+.contact-form button {
+  background-color: #000000;
   color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -368,19 +363,20 @@ ul li a:hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.contact__form button:hover {
-  background-color: #4c51bf;
+.contact-form button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
-.contact__social {
+.contact-social {
   margin-top: 1.5rem;
 }
-.contact__social a {
+.contact-social a {
   color: #5a67d8;
   margin: 0 0.5rem;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
-.contact__social a:hover {
+.contact-social a:hover {
   color: #4c51bf;
 }
 footer {
