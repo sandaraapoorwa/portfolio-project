@@ -21,10 +21,12 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  
 }
 
 .nav__content {
   max-width: var(--max-width);
+  
   margin: auto;
   padding: 1.5rem 1rem;
   display: flex;
@@ -315,7 +317,9 @@ ul li a:hover {
   aspect-ratio: 16 / 9;
   max-height:
 }
-#contact {
+
+.contact {
+  background-image: ;
   max-width: 600px;
   width: 100%;
   margin: 2rem auto;
@@ -324,6 +328,7 @@ ul li a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
+  margin-bottom: 5rem;
 }
 .contact__content h2 {
   font-size: 2rem;
