@@ -66,7 +66,6 @@ ul li a:hover {
 .section {
     background-color: rgb(217, 255, 215);
 }
-
 .section__container {
   min-height: 100vh;
   max-width: var(--max-width);
@@ -76,7 +75,6 @@ ul li a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
-
 .content {
   display: flex;
   flex-direction: column;
@@ -144,7 +142,6 @@ ul li a:hover {
 .CV:hover {
   background-color: rgb(104, 104, 104);
 }
-
 .image {
   display: grid;
   place-items: center;
@@ -316,14 +313,11 @@ ul li a:hover {
 }
 
 .contact {
-  background-color: #FFDEE9;
-background-image: linear-gradient(146deg, #FFDEE9 0%, #B5FFFC 50%, #ffffff 100%);
-
+  background-image: linear-gradient(146deg, #FFDEE9 0%, #B5FFFC 50%, #ffffff 100%);
   max-width: 600px;
   width: 100%;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #efeeee;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
