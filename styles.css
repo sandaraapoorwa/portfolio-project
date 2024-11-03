@@ -272,6 +272,26 @@ ul li a:hover {
   color: #333;
   margin-bottom: 2rem;
 }
+.project-section a {
+  display: inline-flex;
+  align-items: center;
+  color: #0396FF;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.project-section a i {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left:33rem;
+  
+}
+
+.project-section a:hover {
+  color: #0275d8;
+}
 .project-section .Eco-Echoes,
 .project-section .Plane,
 .project-section .student,
