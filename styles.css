@@ -307,6 +307,69 @@ ul li a:hover {
   border-radius: 12px;
   aspect-ratio: 16 / 9;
 }
+/* Blog Section Styling */
+.blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
+  padding: 2rem;
+  color: #333;
+}
+
+.blogs h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.blog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.blog-box {
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.blog-box:hover {
+  transform: translateY(-5px);
+}
+.blog-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.blog-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.blog-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.read-more {
+  color: #0396FF;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.read-more:hover {
+  color: #0275d8;
+}
 .contact-head{
   background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
 
@@ -403,6 +466,7 @@ footer i{
 }
 @media (width < 750px) {
 
+/* vertical layout for the responsive navbar */
   .nav-content{
     flex-direction: column;
     padding: 1rem;
@@ -443,12 +507,10 @@ footer i{
     font-size: 0.95rem;
     line-height: 1.5rem;
   }
-
   .skills {
     padding: 20px;
     gap: 20px;
   }
-
   .project-section {
     grid-template-columns:auto(2, 1fr);
   }
@@ -458,22 +520,12 @@ footer i{
   .project-section .modde {
   padding: 2rem;
   }
-
-
-
   .contact {
     padding: 2rem;
     max-width: 600px;
   }
-
   footer {
     padding: 30px;
     font-size: 14px;
   }
-
-
-
-
-
-
 }
