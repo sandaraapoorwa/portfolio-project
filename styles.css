@@ -28,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 60px;
+  padding-right: 2rem;
   
 }
 
@@ -398,27 +398,13 @@ footer i{
   color: white;
 }
 @media (width < 750px) {
-  nav .checkbox {
-    display: block;
-  }
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-  nav #check:checked ~ ul {
-    left: 0;
-  }
 
-  ul li a {
-    font-size: 1.25rem;
+  .nav-content{
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
   }
+  
   .section__container {
     padding: 10rem 1rem 5rem 1rem;
     text-align: center;
@@ -443,4 +429,5 @@ footer i{
     font-size: 0.95rem;
     line-height: 1.5rem;
   }
+
 }
