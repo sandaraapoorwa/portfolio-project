@@ -250,10 +250,10 @@ ul li a:hover {
 /* Projects Section */
 .projects{
   display: flexbox;
-  background-image:linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );;
+  background-image: linear-gradient( 135deg, #C2FFD8 10%, #465EFB 100%);
   flex-direction: column;
   align-items: center;
-  background-color: #f0f4f8;
+  background-color: #bec1c3;
   padding: 5rem 2rem;
   max-width: 1500px;
   margin: auto;
@@ -261,21 +261,22 @@ ul li a:hover {
 .project-section {
   display: grid;
   gap: 2.5rem;
+  color: #534b4b;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 4rem;
   text-align: center;
   max-width: 1200px;
   margin: auto;
 }
 .project-section h2 {
-  font-size: 3rem;
-  color: #333;
+  font-size: 4rem;
+  color: #534b4b;
   margin-bottom: 2rem;
 }
 .project-section a {
   display: inline-flex;
   align-items: center;
-  color: #0396FF;
+  color: #f6f6f6;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.1rem;
@@ -290,11 +291,27 @@ ul li a:hover {
 .project-section a:hover {
   color: #0275d8;
 }
+.project-section .Eco-Echoes{
+  background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+  
+
+}
+.project-section .Plane{
+  background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+
+}
+.project-section .student{
+  background-image: linear-gradient( 135deg, #FFF5C3 10%, #9452A5 100%);
+
+}
+.project-section .modde {
+  background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+}
 .project-section .Eco-Echoes,
 .project-section .Plane,
 .project-section .student,
-.project-section .modde {
-  background-color: #ffffff;
+.project-section .modde{
+  color: rgb(60, 58, 58);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 4rem;
@@ -305,25 +322,15 @@ ul li a:hover {
 .project-section .Plane:hover,
 .project-section .student:hover,
 .project-section .modde:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 .project-section h3 {
   font-size: 2rem;
   color: #2c3e50;
   margin-bottom: 1.5rem;
 }
-.project-section .img {
-  display: grid;
-  place-items: center;
-  margin-bottom: 1.5rem;
-}
 
-.project-section img {
-  width: min(40rem, 90%);
-  height: auto;
-  border-radius: 12px;
-  aspect-ratio: 16 / 9;
-}
+
 /* Blog Section Styling */
 .blogs {
   display: flex;
@@ -335,21 +342,24 @@ ul li a:hover {
 }
 
 .blogs h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #fff;
+  font-size: 4rem;
+  color: #534b4b;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
 }
 
 .blog-wrapper {
-  display: grid;
+  display:grid;
   grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+  
   max-width: 1200px;
   width: 100%;
 }
 .blog-box {
   padding: 1.5rem;
   background-color: #f9f9f9;
+  background-image: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
@@ -368,7 +378,7 @@ ul li a:hover {
 }
 .blog-image {
   width: 100%;
-  height: auto;
+  height: 50%;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
