@@ -455,7 +455,17 @@ footer i{
   .project-section .student,
   .project-section .modde {
   padding: 2rem;
-}
+  }
+
+
+
+  .contact {
+    padding: 2rem;
+    max-width: 600px;
+  }
+
+
+
 
 
 }
