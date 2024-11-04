@@ -28,7 +28,7 @@
             <h2>Contact Me</h2>
           <p>Feel free to reach out to me using the form below or via social media.</p>
           <div class="contact-form">
-            <form action="https://formspree.io/f/xldejkro" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/xldejkro" method="POST" class="contact-form" onsubmit="return validateForm()">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required placeholder="Your name" />
               
@@ -41,9 +41,15 @@
                 <button type="submit">Send Message</button>
               
                 <div class="contact-social">
-                  <a href="https://x.com/SApoorwa" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/sandara-hettiarachchi-830bb6202/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
-                  <a href="mailto:apoorwasandara@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+                  <a href="https://x.com/SApoorwa" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/sandara-hettiarachchi-830bb6202/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                  <a href="mailto:apoorwasandara@gmail.com" aria-label="Email">
+                    <i class="bx bx-envelope"></i>
+                  </a>
                 </div>
               </form>
               
