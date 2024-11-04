@@ -1,5 +1,7 @@
-
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* CSS Variables for consistent theming */
 :root {
   --primary-color: #000000;
   --primary-color-dark: #94c8ea;
@@ -8,34 +10,50 @@
   --text-light: #6b7280;
   --max-width: 1300px;
 }
+
+/* Global Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* Global Styles */
 a {
   text-decoration: none;
 }
+
 body {
   font-family: "Poppins", sans-serif; 
 }
+
+/* Text Effects */
 h1 {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for headings */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adding subtle text shadow to headings */
 }
+
+/* Pseudo-element for decorative content */
 h2::after {
   content: "★";
 }
+
+/* Attribute Selector for styling external links */
 a[href^="https"] {
-  color: var(--secondary-color); /* Style for external links */
-}
-h1 + p {
-  margin-top: 10px; /* Margin for the first paragraph following an h1 */
-}
-p:not(.highlight) {
-  color: var(--text-dark);/* Style for paragraphs that do not have the highlight class */
+  color: var(--secondary-color);
 }
 
+/* Adjacent Sibling Combinator */
+h1 + p {
+  margin-top: 10px; /* Adding space after headings */
+}
+
+/* Negation Pseudo-class */
+p:not(.highlight) {
+  color: var(--text-dark);
+}
+
+/* Navigation Styles */
 .nav-content {
   margin: auto;
   padding: 1.5rem 1rem;
@@ -44,15 +62,19 @@ p:not(.highlight) {
   justify-content: space-between;
   padding-right: 2rem;
 }
+
 nav .logo a {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
   transition: 0.3s;
 }
+
 nav .logo a:hover {
   color: var(--primary-color-dark);
 }
+
+/* Navigation Menu */
 ul {
   display: flex;
   align-items: center;
@@ -60,7 +82,9 @@ ul {
   list-style: none;
   transition: left 0.3s;
 }
-.nav-content > ul > li > a{
+
+/* Child Combinator for specific styling */
+.nav-content > ul > li > a {
   padding: 0.5rem 1rem;
   border: 2px solid transparent;
   text-decoration: none;
@@ -74,21 +98,26 @@ ul {
   border-color: var(--primary-color);
 }
 
+/* Section Styles */
 .section {
     background-color: rgb(217, 255, 215);
 }
 
+/* Animation for section container */
 .section__container {
   animation: fadeIn 0.8s ease-in-out;
-  
 }
+
+/* Empty State Handling */
 .section:empty {
   display: none;
 }
+
+/* Descendant Combinator */
 .section__container .content > .description ~ .action__btns {
   margin-top: 2rem;
-  
 }
+
 .section__container {
   min-height: 100vh;
   max-width: var(--max-width);
@@ -96,9 +125,10 @@ ul {
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
- 
   gap: 4rem;
 }
+
+/* Content Styles */
 .content {
   display: flex;
   flex-direction: column;
@@ -131,12 +161,14 @@ ul {
   margin-bottom: 2rem;
 }
 
+/* Action Buttons Styles */
 .action__btns {
   display: flex;
   gap: 2rem;
   padding-top: 1rem;
   padding: 1rem;
 }
+
 .action__btns i {
     font-size: 1.8rem;
     color: #000000;
@@ -149,6 +181,7 @@ ul {
   transform: rotate(20deg);
 }
 
+/* Rounded corners for images and buttons */
 img, .action__btns button {
   border-radius: 8px;
 }
@@ -170,23 +203,24 @@ img, .action__btns button {
 .CV:hover {
   background-color: rgb(104, 104, 104);
 }
+
+/* Image Styles */
 .image {
   display: grid;
   place-items: center;
 }
+
 .image img {
-  width: 90%; /* Or a fixed value */
-  height: 78%; /* Set this to the same value as width */
+  width: 90%;
+  height: 78%;
   border-radius: 50%;
 }
+
 .image img:hover {
     opacity: 0.8;
-  }
-  
+}
 
-
-
-/* Smooth scrolling for About section */
+/* About Section Styles */
 #about {
   scroll-behavior: smooth;
 }
@@ -198,8 +232,6 @@ img, .action__btns button {
   aspect-ratio: 1 / 1;
   animation: fadeInScale 1s ease-in-out;
 }
-
-/* About Section Animation */
 
 .about-section {
   background-color: bisque;
@@ -232,7 +264,7 @@ img, .action__btns button {
   animation: slideIn 1.2s ease-in-out;
 }
 
-/* Skills Section Styling */
+/* Skills Section Styles */
 .skill-section {
   padding: 5rem 0 10rem;
   background-color: rgb(162, 242, 226);
@@ -272,7 +304,7 @@ img, .action__btns button {
   text-align: center;
 }
 
-/* Skill Items and Alignment */
+/* Skill Items Styles */
 .skill {
   display: flex;
   flex-direction: column;
@@ -284,7 +316,7 @@ img, .action__btns button {
   animation: fadeInScale 1.5s ease-in-out;
 }
 
-/* nth-child Styling for Visual Alignment */
+/* Nth-child Styling for Visual Alignment */
 .skill:nth-child(odd) {
   background-color: #e9d4d4;
 }
@@ -309,7 +341,7 @@ img, .action__btns button {
   animation: fadeInScale 1.5s ease-in-out;
 }
 
-
+/* Keyframe Animation */
 @keyframes hoverLift {
   0% {
     transform: translateY(0);
@@ -321,7 +353,8 @@ img, .action__btns button {
     transform: translateY(0);
   }
 }
-/* Projects Section */
+
+/* Projects Section Styles */
 .projects {
   display: flex;
   flex-direction: column;
@@ -331,11 +364,9 @@ img, .action__btns button {
   padding: 5rem 2rem;
   max-width: 1500px;
   animation: fadeIn 0.5s ease-in-out;
-  
   margin: auto;
 }
 
-/* Project Section Styling */
 .project-section {
   display: grid;
   gap: 4rem;
@@ -347,7 +378,6 @@ img, .action__btns button {
   margin: auto;
 }
 
-/* Header Styling */
 .project-section h2 {
   font-size: 4rem;
   color: #534b4b;
@@ -355,7 +385,6 @@ img, .action__btns button {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Link Styling */
 .project-section a {
   display: inline-flex;
   align-items: center;
@@ -365,12 +394,12 @@ img, .action__btns button {
   transition: color 0.3s;
 }
 
-/* Icon Positioning */
 .project-section a i {
   font-size: 2rem;
   margin-top: 2rem;
   margin-left: 33rem;
 }
+
 .project-section a:hover {
   color: #0275d8;
 }
@@ -414,7 +443,6 @@ img, .action__btns button {
   transform: translateY(-6px);
 }
 
-/* Project Title Styling */
 .project-section h3 {
   font-size: 2rem;
   color: #2c3e50;
@@ -422,8 +450,7 @@ img, .action__btns button {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Blog Section Styling */
-/* Blogs Section */
+/* Blog Section Styles */
 .blogs {
   display: flex;
   flex-direction: column;
@@ -450,7 +477,7 @@ img, .action__btns button {
   width: 100%;
 }
 
-/* Blog Box with Hover Effect */
+/* Blog Box Styles with Hover Effect */
 .blog-box {
   padding: 1.5rem;
   background-image: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
@@ -465,21 +492,18 @@ img, .action__btns button {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Blog Title */
 .blog-title {
   font-size: 1.5rem;
   margin: 0.5rem 0;
   animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Blog Date */
 .blog-date {
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 1rem;
 }
 
-/* Blog Image Styling */
 .blog-image {
   width: 100%;
   height: 50%;
@@ -489,10 +513,10 @@ img, .action__btns button {
 }
 
 .blog-image:hover {
+  
   opacity: 0.9;
 }
 
-/* Blog Description */
 .blog-description {
   font-size: 1rem;
   line-height: 1.6;
@@ -512,16 +536,7 @@ img, .action__btns button {
   transform: scale(1.05);
 }
 
-/* Keyframes for Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/* Contact Section */
+/* Contact Section Styles */
 .contact {
   background-image: linear-gradient(135deg, #ABDCFF 10%, #0396FF 100%);
   max-width: 2000px;
@@ -532,7 +547,6 @@ img, .action__btns button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 1s ease-in-out;
 }
-
 
 .contact-content {
   max-width: 600px;
@@ -603,6 +617,7 @@ img, .action__btns button {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .contact-form button:hover {
   background-color: #ffffff;
   color: #000000;
@@ -613,16 +628,20 @@ img, .action__btns button {
 .contact-social {
   margin-top: 1.5rem;
 }
+
 .contact-social a {
   color: #5a67d8;
   margin: 0 0.5rem;
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.2s ease;
 }
+
 .contact-social a:hover {
   color: #4c51bf;
   transform: rotate(10deg);
 }
+
+/* Footer Styles */
 footer {
     padding: 30px;
     text-align: center;
@@ -633,7 +652,8 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
-footer i{
+
+footer i {
   padding-top: 2rem;
   display: flex;
   gap: 2rem;
@@ -641,8 +661,10 @@ footer i{
   padding: 1rem;
   color: white;
 }
-@media (width < 750px) {
 
+/* Media Queries for Responsive Design */
+@media (width < 750px) {
+  /* Responsive styles for smaller screens */
   .nav-content {
     display: flex;
     justify-content: space-between;
@@ -718,7 +740,8 @@ footer i{
     max-width: 600px;
   }
 }
-/* Consolidated keyframes */
+
+/* Keyframe Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -738,5 +761,3 @@ footer i{
     opacity: 1;
   }
 }
-
-
